@@ -1,7 +1,7 @@
 # Mass conservation on rails
 
 Reproducible code for **Mass Conservation on Rails - Rethinking Physics-Informed Learning of Ice Flow Vector Fields** submission. We propose dfNNs (divergence-free neural networks, for implementation see 
-[models.py](models.py)) to reconstruct divergence-free (i.e. locally mass conserving) vector fields in 2D and compare them to PINNs and NNs on real ice flux data from Antarctica's Byrd glacier. 
+[models.py](models.py)) to reconstruct divergence-free (i.e. locally mass conserving) vector fields in 2D and compare them to PINNs and NNs on real ice flux data from Antarctica's Byrd glacier. Generating physically consistent ice flux interpolation from *noisy & sparse* data - without flux artefacts - is crucial for numerical ice sheet models to work, and to reliably project future sea level rise from Antarctic ice sheet contributions (see [this paper](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2011GL047338) for example).
 
 ![intro_vis](figures/intro_model_vis.png)
 
@@ -54,7 +54,7 @@ The models produce the following predictions over a small, selected test region:
 
 ## Data
 
-Here we provide the already preprocessed training, testing and *directional guidance* data in [data](data). After the reviewing process we will link to the full reproducable preprocessing pipeline (not anonoymous). We use the following data sets:
+Here we provide the already preprocessed training, testing and *directional guidance* data in [data](data). After the reviewing process we will link to the full reproducible preprocessing pipeline (not anonoymous). We use the following data sets:
 - [Ice thickness measurements from the Bedmap data collection (Bedmap 1 + Bedmap 2 + Bedmap 3)](https://www.bas.ac.uk/project/bedmap/#data)
     - *Frémand, Alice C., et al. "Antarctic Bedmap data: Findable, Accessible, Interoperable, and Reusable (FAIR) sharing of 60 years of ice bed, surface, and thickness data." Earth System Science Data 15.7 (2023): 2695-2710.*
 - [Ice velocity map from MEaSUREs Phase-Based Antarctica Ice Velocity Map, Version 1](https://nsidc.org/data/nsidc-0754/versions/1)
