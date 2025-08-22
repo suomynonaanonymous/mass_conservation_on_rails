@@ -6,7 +6,7 @@ Reproducible code for **Mass Conservation on Rails - Rethinking Physics-Informed
 ![intro_vis](figures/intro_model_vis.png)
 
 ## Models
-- dfNN
+- dfNN (NEW)
 - PINN
 - NN
 
@@ -15,8 +15,12 @@ Reproducible code for **Mass Conservation on Rails - Rethinking Physics-Informed
 For all three models, we evaluate the following three variants, resulting in 9 models total.
 
 - (base)
-- dir (directional guidance)
+- dir (directional guidance) (NEW)
 - aux (auxiliary surface inputs, i.e. surface elevation)
+
+The three models trained with *directional guidance* produce the following predictions over a small, selected test region:
+
+![predictions](figures/pred_vis.png)
 
 ## Set up the environment
 
@@ -47,10 +51,6 @@ After the python environment is activated, all 9 experiments can be run via the 
 The following results can be reproduced:
 
 ![rmse_barplot](figures/rmse_barplot_MAD.png)
-
-The models produce the following predictions over a small, selected test region:
-
-![predictions](figures/pred_vis.png)
 
 ## Data
 
