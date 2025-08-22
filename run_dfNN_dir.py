@@ -66,11 +66,10 @@ print("y_test shape:", y_test.shape)
 print()
 
 ### UNIT VELOCITIES OVER DOMAIN ###
-# test_velocity_unit_norm = torch.load("data/directional_guidance_test/test_velocity_unit_norm.pt", 
-#                                     weights_only = False).to(device)
 # Actuall learn across full domain since train observations are sparse too
-velocity_unit_norm = torch.load("data/directional_guidance_test/velocity_unit_norm.pt", 
+velocity_unit_norm = torch.load("data/directional_guidance/velocity_unit_norm.pt", 
                                      weights_only = False).to(device)
+
 print("velocity_unit_norm shape:", velocity_unit_norm.shape)
 # Extract number of velocities as upper bound
 N_dg = velocity_unit_norm.shape[0]
