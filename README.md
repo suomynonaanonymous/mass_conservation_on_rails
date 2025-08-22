@@ -1,6 +1,7 @@
 # Mass conservation on rails
 
-Reproducible code for "Mass Conservation on Rails - Rethinking Physics-Informed Learning of Ice Flow Vector Fields" submission. We propose dfNNs (divergence-free neural networks) to reconstruct divergence-free (i.e. locally mass conserving) vector fields in 2D and compare them to PINNs and NNs on real ice flux data from Antarctica's Byrd glacier. 
+Reproducible code for **Mass Conservation on Rails - Rethinking Physics-Informed Learning of Ice Flow Vector Fields** submission. We propose dfNNs (divergence-free neural networks, for implementation see 
+![models.py](models.py)) to reconstruct divergence-free (i.e. locally mass conserving) vector fields in 2D and compare them to PINNs and NNs on real ice flux data from Antarctica's Byrd glacier. 
 
 ![intro_vis](figures/intro_model_vis.png)
 
@@ -42,3 +43,9 @@ Installation may take a few minutes.
 ## Run experiments
 
 All 9 experiments can be run via the terminal with `python mass_conservation_on_rails/run_dfNN_aux.py` and equivalent.
+
+The following results can be reproduced:
+
+![rmse_barplot](figures/rmse_barplot_MAD.png)
+
+## 
