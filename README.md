@@ -48,6 +48,10 @@ The following results can be reproduced:
 
 ![rmse_barplot](figures/rmse_barplot_MAD.png)
 
+The models produce the following predictions over a small, selected test region:
+
+![predictions](figures/pred_vis.png)
+
 ## Data
 
 Here we provide the already preprocessed training, testing and *directional guidance* data in [data](data). After the reviewing process we will link to the full reproducable preprocessing pipeline (not anonoymous). We use the following data sets:
