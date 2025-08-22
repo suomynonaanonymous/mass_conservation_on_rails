@@ -42,7 +42,7 @@ Installation may take a few minutes.
 
 ## Run experiments
 
-All 9 experiments can be run via the terminal with `python mass_conservation_on_rails/run_dfNN_aux.py` and equivalent. This will save the trained models to [trained_models](trained_models) and save results to [results](results). After all experiments are run you can use the jupyter notebook [visualise_results_and_convergences.ipynb](results/visualise_results_and_convergences.ipynb) to plot model convergence and view performance metrics on test.
+After the python environment is activated, all 9 experiments can be run via the terminal with `python mass_conservation_on_rails/run_dfNN_aux.py` and equivalent. This will save the trained models to [trained_models](trained_models) and save results to [results](results). After all experiments are run you can use the jupyter notebook [visualise_results_and_convergences.ipynb](results/visualise_results_and_convergences.ipynb) to plot model convergence and view performance metrics on test.
 
 The following results can be reproduced:
 
@@ -50,4 +50,9 @@ The following results can be reproduced:
 
 ## Data
 
-Here we provide the already preprocessed training, testing and *directional guidance* data in [data](data). After the reviewing process we will link to the full reproducable preprocessing pipeline (not anonoymous)
+Here we provide the already preprocessed training, testing and *directional guidance* data in [data](data). After the reviewing process we will link to the full reproducable preprocessing pipeline (not anonoymous). We use the following data sets:
+- [Ice thickness measurements from the Bedmap data collection (Bedmap 1 + Bedmap 2 + Bedmap 3)](https://www.bas.ac.uk/project/bedmap/#data)
+    - *Frémand, Alice C., et al. "Antarctic Bedmap data: Findable, Accessible, Interoperable, and Reusable (FAIR) sharing of 60 years of ice bed, surface, and thickness data." Earth System Science Data 15.7 (2023): 2695-2710.*
+- [Ice velocity map from MEaSUREs Phase-Based Antarctica Ice Velocity Map, Version 1](https://nsidc.org/data/nsidc-0754/versions/1)
+  - *Mouginot, J., Rignot, E. & Scheuchl, B. (2019). MEaSUREs Phase-Based Antarctica Ice Velocity Map. (NSIDC-0754, Version 1). Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. https://doi.org/10.5067/PZ3NJ5RXRH10. Date Accessed 08-22-2025.*
+
